@@ -29,9 +29,18 @@ if(playerInput == '1'){
 } else if(playerInput == '2'){
     playerMove = 'papier';
 
-} else if(palyerInput == '3'){
+} else if(playerInput == '3'){
     playerMove = 'nozyce';
 }
-
 printMessage('Twój ruch to: ' + playerMove);
 
+if( computerMove == playerMove ){
+    printMessage('Remis!');
+    
+} else if ((computerMove == 'papier' && playerMove == 'kamien') || (computerMove == 'kamien' && playerMove == 'nozyce') || (computerMove == 'nozyce' && playerMove == 'papier')){
+    printMessage('Ty wygrywasz!');
+
+} else if ((computerMove == 'papier' && playerMove == 'nozyce') || (computerMove == 'nozyce' && playerMove == 'kamien') || (computerMove == 'kamien' && playerMove == 'papier')){
+    printMessage('Ty przegrywasz!');
+    }
+}
