@@ -42,5 +42,8 @@ if( computerMove == playerMove ){
 
 } else if ((computerMove == 'papier' && playerMove == 'nozyce') || (computerMove == 'nozyce' && playerMove == 'kamien') || (computerMove == 'kamien' && playerMove == 'papier')){
     printMessage('Ty przegrywasz!');
-    }
+
+} else {
+    printMessage('Blad');
 }
+
