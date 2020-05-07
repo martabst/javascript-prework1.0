@@ -17,9 +17,3 @@ function playerMove(){
 	let playerMove = 'papier';
 	playerMove('Zagralem' + playerMove + 'Jesli Twoj ruch to kamien, to wygrywasz!');
 }
-
-
-
-
-
-
