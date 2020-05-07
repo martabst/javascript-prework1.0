@@ -16,4 +16,14 @@ function computerMove(){
 function playerMove(){
 	let playerMove = 'papier';
 	playerMove('Zagralem' + playerMove + 'Jesli Twoj ruch to kamien, to wygrywasz!');
+
 }
+
+function getMoveName(MoveId){
+	if(MoveId == 1){
+		return 'kamien';
+	} 
+		
+	printMessage('Nie znam ruchu o id' + MoveId + '.');
+	return 'nieznany ruch';
+	}
